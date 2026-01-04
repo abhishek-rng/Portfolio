@@ -6,9 +6,8 @@
 }
 
 body {
-    background-color: #f4f6f8;
+    background-color: #f4f7fb;
     color: #333;
-    line-height: 1.6;
 }
 
 /* Header */
@@ -19,22 +18,53 @@ header {
     padding: 40px 20px;
 }
 
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid white;
+    object-fit: cover;
+    margin-bottom: 15px;
+
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    cursor: pointer;
+}
+
+/* Hover animation */
+.profile-pic:hover {
+    transform: scale(1.08) rotate(1deg);
+    box-shadow: 0 12px 30px rgba(10, 102, 194, 0.6);
+}
+
+
 header h1 {
-    font-size: 36px;
+    font-size: 32px;
 }
 
 header p {
     font-size: 18px;
-    margin-top: 10px;
+    margin-top: 8px;
 }
 
 /* Sections */
 .section {
-    background: white;
     max-width: 900px;
+    background: white;
     margin: 30px auto;
     padding: 25px;
     border-radius: 8px;
+    transition: all 0.8s ease;
+}
+
+/* Scroll animation */
+.hidden {
+    opacity: 0;
+    transform: translateY(40px);
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .section h2 {
@@ -42,27 +72,23 @@ header p {
     margin-bottom: 15px;
 }
 
-/* Skills */
-.skills {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.skills li {
+/* Skills & Interests */
+.skills span {
+    display: inline-block;
     background: #e6f0fa;
     color: #0a66c2;
     padding: 8px 15px;
-    margin: 5px;
+    margin: 6px;
     border-radius: 20px;
     font-size: 14px;
 }
 
 /* Footer */
 footer {
+    background-color: #0a66c2;
+    color: white;
     text-align: center;
     padding: 20px;
-    background: #0a66c2;
-    color: white;
     margin-top: 40px;
 }
+
