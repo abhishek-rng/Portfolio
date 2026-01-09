@@ -54,6 +54,8 @@ header p {
     padding: 25px;
     border-radius: 8px;
     transition: all 0.8s ease;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+
 }
 
 /* Scroll animation */
@@ -81,7 +83,16 @@ header p {
     margin: 6px;
     border-radius: 20px;
     font-size: 14px;
+    transition: all 0.3s ease;
+    cursor: default;
 }
+
+.skills span:hover {
+    background: #0a66c2;
+    color: white;
+    transform: translateY(-3px);
+}
+
 
 /* Footer */
 footer {
@@ -91,4 +102,25 @@ footer {
     padding: 20px;
     margin-top: 40px;
 }
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 26px;
+    }
+
+    header p {
+        font-size: 16px;
+    }
+
+    .section {
+        margin: 20px 15px;
+        padding: 20px;
+    }
+
+    .profile-pic {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+
 
